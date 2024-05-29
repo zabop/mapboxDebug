@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoicGFsc3phYm8iLCJhIjoiY2xrNWY3cDhuMGpiajNwbzdlNzlscHc1eSJ9.Sppso1puTUCwR03aaWUHsQ";
+      const map = new mapboxgl.Map({
+        container: "map",
+        maxZoom: 10,
+        minZoom: 0,
+        zoom: 6,
+        center: [-82, 0],
+        style: "mapbox://styles/mapbox/dark-v11",
+      });
+      const r = 151; // choose any integer between 0 and 255 both inclusive, and a square will show up
+      const normalizer = 258; // choose any other integer, and no square will show up
+      map.on("load", () => {
+        map.addSource("image", {
+          type: "image",
+          url:
+            "https://raw.githubusercontent.com/zabop/mapboxDebug/master/webps/R" +
+            r +
+            ".webp",
+          coordinates: [
+            [-83, 1],
+            [-81, 1],
+            [-81, -1],
+            [-83, -1],
+          ],
+        });
+        map.addLayer({
+          id: "radar-layer",
+          type: "raster",
+          source: "image",
+          paint: {
+            "raster-color": [
+              "interpolate",
+              ["linear"],
+              ["raster-value"],
+              (r - 0.5) / normalizer,
+              "rgba(0,0,0,0)",
+              (r - 0.4) / normalizer,
+              "rgba(123,222,111,255)",
+              (r + 0.4) / normalizer,
+              "rgba(123,222,111,255)",
+              (r + 0.5) / normalizer,
+              "rgba(0,0,0,0)",
+            ],
+            "raster-color-mix": [1, 0, 0, 0],
+            "raster-color-range": [
+              (r - 0.5) / normalizer,
+              (r + 0.5) / normalizer,
+            ],
+            "raster-resampling": "nearest",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
