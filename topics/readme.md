@@ -25,6 +25,6 @@ I don't have a good answer for number 5., and I find number 6. quite buffling. H
 
 6. In addition to the `raster-color-range` change in step 4, load `R155.webp` (a webp with all RGB values set to 155,0,0) instead of `R156.webp`. Why do we still have a squre shown?
 
-I tried to have a satisfactory answer to 4. and 5. via a drawing, I didn't get there. Here is the drawing nevertheless:
+I tried to have a satisfactory answer to 5. and 6. via a drawing, I didn't get there. Here is the drawing nevertheless:
 
 ![](https://raw.githubusercontent.com/zabop/mapboxDebug/refs/heads/master/topics/plot.jpg)
