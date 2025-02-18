@@ -1,6 +1,6 @@
 # t0
 
-Save [`t0.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t0.html) and open it in a browser. Make sure you see a green square.
+Save [`t0.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t0.html) and open it in a browser. Make sure you see a blue square.
 
 Edit the file to achieve the following.
 
