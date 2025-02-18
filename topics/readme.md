@@ -23,7 +23,7 @@ I don't have a good answer for number 5., and I find number 6. quite buffling. H
 
 5. Now look at `raster-color-range` ([docs](https://docs.mapbox.com/style-spec/reference/layers/#paint-raster-raster-color-range)) section. Change it to: `"raster-color-range": [0 / normalizer, 258 / normalizer]`. Why does the square have the colour it has?
 
-6. In addition to the `raster-color-range` change in step 4, load `R155.webp` instead of `R156.webp` (this is a webp with all RGB values set to 155,0,0). Why do we still have a squre shown?
+6. In addition to the `raster-color-range` change in step 4, load `R155.webp` (a webp with all RGB values set to 155,0,0) instead of `R156.webp`. Why do we still have a squre shown?
 
 I tried to have a satisfactory answer to 4. and 5. via a drawing, I didn't get there. Here is the drawing nevertheless:
 
