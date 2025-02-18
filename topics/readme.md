@@ -5,7 +5,7 @@ Save [`t0.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t0.html
 Edit the file to achieve the following.
 
 1. Make the square red
-2. Make the square blue and somewhat transparent.
+2. Make the square green and somewhat transparent.
 
 # t1
 
