@@ -1,9 +1,13 @@
+# t0
+
 Save [`t0.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t0.html) and open it in a browser. Make sure you see a green square.
 
 Edit the file to achieve the following.
 
 1. Make the square red
 2. Make the square blue and somewhat transparent.
+
+# t1
 
 Take a look at [`t1.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t1.html).
 
@@ -18,6 +22,8 @@ I don't have a good answer for number 4., and I find number 5. quite buffling. H
 I tried to have a satisfactory answer to 4. and 5. via a drawing, I didn't get there. Here is the drawing nevertheless:
 
 ![](https://raw.githubusercontent.com/zabop/mapboxDebug/refs/heads/master/topics/plot.jpg)
+
+# t2
 
 Take a look at [`t2.html`](https://github.com/zabop/mapboxDebug/blob/master/topics/t2.html).
 
